@@ -1,0 +1,720 @@
+/* Donate Hero Section */
+.donate-hero {
+  position: relative;
+  background: linear-gradient(135deg, #FF9933 0%, #138808 100%);
+  padding: 4rem 0 3rem;
+  overflow: hidden;
+}
+
+.donate-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+  background-size: 50px 50px;
+}
+
+.donate-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.donate-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.donate-hero-icon {
+  margin-bottom: 1rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.donate-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.donate-hero-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Impact Section */
+.donate-impact-section {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+.section-header-center {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header-center h2 {
+  font-size: 2.5rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.section-header-center p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.impact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.impact-card-donate {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-card-donate:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.impact-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-saffron);
+  margin-bottom: 1rem;
+}
+
+.impact-card-donate h3 {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.impact-card-donate p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Bank Details Section */
+.bank-details-section {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+.bank-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bank-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.bank-icon {
+  color: var(--color-saffron);
+  margin-bottom: 1.5rem;
+}
+
+.bank-header h2 {
+  font-size: 2.5rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.bank-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Payment Methods Grid - Side by Side */
+.payment-methods-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.payment-method-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.payment-method-title {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-saffron);
+}
+
+.bank-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bank-details-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid #dee2e6;
+}
+
+.bank-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.bank-detail-row:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transform: translateX(4px);
+}
+
+.bank-detail-content {
+  flex: 1;
+}
+
+.bank-detail-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.bank-detail-value-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.bank-detail-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  font-family: 'Courier New', monospace;
+}
+
+.bank-detail-note {
+  font-size: 0.85rem;
+  color: #dc3545;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.copy-button {
+  background: var(--color-saffron);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-button:hover {
+  background: #e67e22;
+  transform: scale(1.05);
+}
+
+.copy-button:active {
+  transform: scale(0.95);
+}
+
+.copy-icon-success {
+  color: #28a745;
+}
+
+.bank-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.bank-note svg {
+  color: #856404;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.bank-note-content {
+  flex: 1;
+}
+
+.bank-note-content p {
+  color: #856404;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.bank-note-content p:last-child {
+  margin-bottom: 0;
+}
+
+.bank-note strong {
+  color: #664d03;
+}
+
+.form-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #FF9933 0%, #138808 100%);
+  color: white;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 153, 51, 0.3);
+  margin: 0.5rem 0;
+}
+
+.form-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 153, 51, 0.4);
+}
+
+.form-button:active {
+  transform: translateY(0);
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: #856404;
+  font-style: italic;
+  margin-top: 0.75rem;
+}
+
+/* Contact Section */
+.donate-contact-section {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+/* QR Code Content */
+.qr-code-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.qr-subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.qr-code-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 16px;
+  border: 3px dashed var(--color-saffron);
+  width: 100%;
+}
+
+.qr-code-image {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.qr-code-image:hover {
+  transform: scale(1.05);
+}
+
+.qr-instruction {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* UPI ID Section */
+.upi-id-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fff8f0 0%, #ffe8d6 100%);
+  border-radius: 12px;
+  border: 2px solid var(--color-saffron);
+  box-shadow: 0 4px 12px rgba(255, 153, 51, 0.15);
+}
+
+.upi-id-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.upi-id-content {
+  flex: 1;
+  text-align: left;
+}
+
+.upi-id-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #856404;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.upi-id-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #664d03;
+  font-family: 'Courier New', monospace;
+  word-break: break-all;
+  background: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ffc107;
+  display: inline-block;
+}
+
+.merchant-name {
+  font-size: 0.95rem;
+  color: #664d03;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.qr-merchant-name {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px dashed #dee2e6;
+}
+
+.upi-copy-button {
+  background: linear-gradient(135deg, #FF9933 0%, #f57c00 100%);
+  color: white;
+  border: none;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(255, 153, 51, 0.3);
+  flex-shrink: 0;
+}
+
+.upi-copy-button:hover {
+  background: linear-gradient(135deg, #f57c00 0%, #e67e22 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 153, 51, 0.4);
+}
+
+.upi-copy-button:active {
+  transform: translateY(0);
+}
+
+.upi-copy-icon-success {
+  color: #28a745;
+  animation: successBounce 0.5s ease;
+}
+
+@keyframes successBounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Remove old QR section styles */
+.qr-code-section {
+  margin-top: 3rem;
+}
+
+.qr-divider {
+  position: relative;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.qr-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #dee2e6 20%, #dee2e6 80%, transparent);
+}
+
+.qr-divider-text {
+  position: relative;
+  display: inline-block;
+  background: #f8f9fa;
+  padding: 0 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #666;
+  z-index: 1;
+}
+
+.qr-code-container {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.qr-title {
+  font-size: 1.8rem;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+/* Contact Section */
+.donate-contact-section {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+.donate-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.donate-contact-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donate-contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.contact-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #FF9933 0%, #138808 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: white;
+}
+
+.donate-contact-card h3 {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.contact-link {
+  display: inline-block;
+  color: var(--color-saffron);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+.contact-description {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.contact-address {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+/* Thank You Section */
+.thank-you-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #FF9933 0%, #138808 100%);
+  color: white;
+}
+
+.thank-you-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.thank-you-icon {
+  margin-bottom: 1.5rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.thank-you-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.thank-you-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .donate-hero {
+    padding: 3rem 0 2rem;
+  }
+
+  .donate-hero-title {
+    font-size: 2rem;
+  }
+
+  .donate-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-header-center h2,
+  .bank-header h2,
+  .thank-you-content h2 {
+    font-size: 2rem;
+  }
+
+  .bank-details-card {
+    padding: 1.5rem;
+  }
+
+  .payment-methods-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .payment-method-card {
+    padding: 1.5rem;
+  }
+
+  .payment-method-title {
+    font-size: 1.3rem;
+  }
+
+  .bank-detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .copy-button {
+    align-self: flex-end;
+  }
+
+  .bank-detail-value {
+    font-size: 1.1rem;
+  }
+
+  .impact-cards-grid,
+  .donate-contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qr-code-image-wrapper {
+    padding: 1rem;
+  }
+
+  .qr-code-image {
+    max-width: 220px;
+  }
+
+  .qr-code-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .qr-title {
+    font-size: 1.5rem;
+  }
+
+  .upi-id-container {
+    padding: 1rem;
+  }
+
+  .upi-id-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .upi-id-value {
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .upi-copy-button {
+    width: 100%;
+    padding: 0.875rem;
+  }
+}

@@ -1,0 +1,119 @@
+.footer {
+  background-color: #222;
+  color: var(--color-white);
+  padding-top: 4rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer-title {
+  color: var(--color-saffron);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  color: var(--color-white);
+  transition: all 0.3s;
+}
+
+.social-links a:hover {
+  background-color: var(--color-saffron);
+  transform: translateY(-3px);
+}
+
+.footer-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-subtitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-green);
+}
+
+.footer-links li, .footer-contact li {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--color-saffron);
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #ccc;
+}
+
+.footer-contact svg {
+  color: var(--color-saffron);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+/* Clickable contact styles in footer */
+.footer-contact .clickable-contact,
+.footer-contact .clickable-email {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.footer-contact .clickable-contact:hover,
+.footer-contact .clickable-email:hover {
+  color: var(--color-saffron);
+  text-decoration-color: var(--color-saffron);
+  transform: translateX(5px);
+}
+
+.footer-bottom {
+  background-color: #111;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #999;
+  font-size: 0.875rem;
+}

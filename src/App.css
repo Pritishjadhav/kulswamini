@@ -1,0 +1,172 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-top: var(--nav-height);
+}
+
+.whatsapp-float-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-float-btn svg {
+  fill: white;
+}
+
+/* Floating Events Button */
+.events-float-btn {
+  position: fixed;
+  top: calc(var(--nav-height) + 20px);
+  right: 30px;
+  background: linear-gradient(135deg, var(--color-saffron), #f59e0b);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 15px rgba(255, 153, 51, 0.4);
+  z-index: 999;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.events-float-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 153, 51, 0.6);
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.events-btn-text {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Comprehensive Responsive Design for Floating Buttons */
+
+/* Extra Small Devices (320px - 480px) */
+@media (max-width: 480px) {
+  .whatsapp-float-btn {
+    bottom: 20px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .events-float-btn {
+    top: calc(var(--nav-height) + 10px);
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+  }
+  
+  .events-btn-text {
+    display: none;
+  }
+}
+
+/* Small Mobile Devices (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .whatsapp-float-btn {
+    bottom: 25px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
+  
+  .events-float-btn {
+    top: calc(var(--nav-height) + 15px);
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+  }
+  
+  .events-btn-text {
+    display: none;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .whatsapp-float-btn {
+    bottom: 30px;
+    right: 25px;
+  }
+  
+  .events-float-btn {
+    top: calc(var(--nav-height) + 20px);
+    right: 25px;
+    padding: 0.7rem 1.1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Large Tablets/Small Desktops (1025px - 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .events-float-btn {
+    padding: 0.75rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Large Desktops (1201px - 1440px) */
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .whatsapp-float-btn {
+    width: 65px;
+    height: 65px;
+  }
+  
+  .events-float-btn {
+    padding: 0.8rem 1.3rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Large Screens (1441px+) */
+@media (min-width: 1441px) {
+  .whatsapp-float-btn {
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .events-float-btn {
+    top: calc(var(--nav-height) + 30px);
+    right: 40px;
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+  }
+}

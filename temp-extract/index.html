@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kulswamini Pratishthan Pune</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <style>
+        :root {
+            --color-saffron: #ff9933;
+            --color-green: #22c55e;
+            --color-text: #0f172a;
+            --color-text-light: #64748b;
+            --color-white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--color-text);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Navigation */
+        nav {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--color-saffron);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--color-saffron);
+        }
+        
+        .donate-btn {
+            background: var(--color-saffron);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .donate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 153, 51, 0.3);
+        }
+        
+        /* Hero Section */
+        .hero-section-clean {
+            background: #f8fafc;
+            padding: 8rem 0 4rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-container-clean {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero-text-content {
+            max-width: 600px;
+        }
+        
+        .hero-badge-clean {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #64748b;
+            margin-bottom: 2rem;
+        }
+        
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--color-saffron);
+            border-radius: 50%;
+        }
+        
+        .hero-title-clean {
+            font-size: clamp(3rem, 4.5vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            color: #0f172a;
+            margin-bottom: 1rem;
+        }
+        
+        .title-highlight-green {
+            color: var(--color-green);
+        }
+        
+        .title-highlight-saffron {
+            color: var(--color-saffron);
+        }
+        
+        .hero-subtitle-clean {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #475569;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .hero-desc-clean {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #64748b;
+            margin-bottom: 3rem;
+        }
+        
+        .hero-actions-clean {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .btn-primary-clean, .btn-secondary-clean {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary-clean {
+            background: var(--color-saffron);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 153, 51, 0.3);
+        }
+        
+        .btn-primary-clean:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 153, 51, 0.4);
+        }
+        
+        .btn-secondary-clean {
+            background: white;
+            color: var(--color-text);
+            border: 1px solid #cbd5e1;
+        }
+        
+        .btn-secondary-clean:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+        }
+        
+        .hero-visual-clean {
+            text-align: center;
+        }
+        
+        .hero-main-image {
+            max-width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        
+        /* Activities Section */
+        .activities-section-new {
+            padding: 6rem 0;
+            background: #f8fafc;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        .activities-grid-new {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .activity-card-new {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+        
+        .activity-card-new:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        
+        .card-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--color-saffron), #f59e0b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .card-content {
+            padding: 2rem;
+        }
+        
+        .card-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .activities-cta {
+            text-align: center;
+        }
+        
+        .btn-primary-new {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1.25rem 2.5rem;
+            background: linear-gradient(135deg, var(--color-saffron), #f59e0b);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 153, 51, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary-new::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-primary-new:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary-new:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 153, 51, 0.4);
+        }
+        
+        /* Book Section - Minimal */
+        .book-hero-minimal {
+            padding: 3rem 0 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            text-align: center;
+            color: white;
+        }
+        
+        .book-title-minimal {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.75rem;
+        }
+        
+        .book-section-minimal {
+            padding: 3rem 0;
+            background: #f8fafc;
+        }
+        
+        .book-grid-minimal {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 2rem;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .book-cover-minimal {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--color-text);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-container-clean {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .book-grid-minimal {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-float-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            z-index: 1000;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-float-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Kulswamini Pratishthan</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#book">Gondan Book</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="donate-btn">DONATE NOW</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section-clean">
+        <div class="container hero-container-clean">
+            <div class="hero-text-content">
+                <div class="hero-badge-clean">
+                    <span class="badge-dot"></span>
+                    Est. 2010 • Pune, Maharashtra
+                </div>
+                
+                <h1 class="hero-title-clean">
+                    Kulswamini
+                    <span class="title-highlight-green"> Pratishthan</span>
+                    <br />
+                    <span class="title-highlight-saffron">Pune</span>
+                </h1>
+                
+                <h2 class="hero-subtitle-clean">
+                    Serving Society, Saving Lives
+                </h2>
+                
+                <p class="hero-desc-clean">
+                    Join hands with Pune's most dedicated volunteers. Together, we conduct life-saving campaigns, 
+                    foster environmental sustainability, and empower the youth to build a brighter tomorrow.
+                </p>
+                
+                <div class="hero-actions-clean">
+                    <a href="#contact" class="btn-primary-clean">
+                        Join Our Mission →
+                    </a>
+                    <a href="#about" class="btn-secondary-clean">
+                        Discover Our Work
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual-clean">
+                <img 
+                    src="/hero-image.png" 
+                    alt="Volunteers helping" 
+                    class="hero-main-image"
+                    style="width: 500px; height: 400px; object-fit: cover;"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities-section-new">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Key Initiatives</h2>
+                <p>Transforming communities through dedicated action and compassionate service</p>
+            </div>
+            <div class="activities-grid-new">
+                <div class="activity-card-new">
+                    <div class="card-image">❤️</div>
+                    <div class="card-content">
+                        <h3>Blood Donation Camps</h3>
+                        <p>Organizing regular blood donation drives to save lives and support hospitals.</p>
+                    </div>
+                </div>
+                <div class="activity-card-new">
+                    <div class="card-image">🌳</div>
+                    <div class="card-content">
+                        <h3>Tree Plantation</h3>
+                        <p>Making our city greener by planting and maintaining native tree species.</p>
+                    </div>
+                </div>
+                <div class="activity-card-new">
+                    <div class="card-image">📚</div>
+                    <div class="card-content">
+                        <h3>Motivational Lectures</h3>
+                        <p>Empowering youth through inspiring talks at various schools and colleges.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="activities-cta">
+                <a href="#activities" class="btn-primary-new">
+                    <span>View All Activities</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Section -->
+    <section id="book" class="book-hero-minimal">
+        <div class="container">
+            <div class="hero-content-minimal">
+                <div class="book-badge-minimal">
+                    LITERARY COLLECTION
+                </div>
+                
+                <h1 class="book-title-minimal">Gondan Book</h1>
+                
+                <p class="book-subtitle-minimal">
+                    A beautiful collection of Marathi literature celebrating our culture
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-section-minimal">
+        <div class="container">
+            <div class="book-grid-minimal">
+                <div class="book-image-minimal">
+                    <img 
+                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                        alt="Gondan Book Cover"
+                        class="book-cover-minimal"
+                    />
+                </div>
+                
+                <div class="book-info-minimal">
+                    <h2>About The Book</h2>
+                    <p>
+                        "Gondan" is our yearly publication featuring diverse literary works from our 
+                        community members. This curated Marathi book contains inspiring poems, 
+                        stories, and articles reflecting our culture.
+                    </p>
+                    
+                    <div class="book-buttons-minimal">
+                        <button class="btn-read-minimal">
+                            👁️ Read Online
+                        </button>
+                        <button class="btn-download-minimal">
+                            📥 Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to join our mission? Contact us today!</p>
+            </div>
+            <div style="text-align: center;">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                    📞 Phone: +91 99224 01862<br>
+                    📧 Email: kulswaminipratishthan@gmail.com<br>
+                    📍 Address: Pune, Maharashtra
+                </p>
+                <a href="https://wa.me/919922401862" class="btn-primary-clean">
+                    Contact Us on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kulswamini Pratishthan Pune. All rights reserved.</p>
+            <p>Serving Society, Saving Lives since 2010</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a 
+        href="https://wa.me/919922401862" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="whatsapp-float-btn"
+        aria-label="Chat with us on WhatsApp"
+    >
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+        </svg>
+    </a>
+</body>
+</html>
