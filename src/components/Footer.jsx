@@ -60,10 +60,10 @@ const Footer = () => {
               <Mail size={18} /> 
               <span 
                 className="clickable-email" 
-                onClick={() => handleEmailClick('kulswaminipratishthan@gmail.com')}
+                onClick={() => handleEmailClick('kulswaminipratistanpune@gmail.com')}
                 title="Click to send email"
               >
-                kulswaminipratishthan@gmail.com
+                kulswaminipratistanpune@gmail.com
               </span>
             </li>
           </ul>

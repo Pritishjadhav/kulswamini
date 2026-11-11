@@ -174,8 +174,8 @@ const Donate = () => {
                 <Mail size={32} />
               </div>
               <h3>Email Us</h3>
-              <a href="mailto:kulswaminipratishthan@gmail.com" className="contact-link">
-                kulswaminipratishthan@gmail.com
+              <a href="mailto:kulswaminipratistanpune@gmail.com" className="contact-link">
+                kulswaminipratistanpune@gmail.com
               </a>
               <p className="contact-description">We'll respond within 24 hours</p>
             </div>

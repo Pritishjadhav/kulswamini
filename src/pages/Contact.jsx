@@ -82,7 +82,7 @@ const Contact = () => {
                   <div>
                     <h4 style={{fontSize: '1.1rem', marginBottom: '4px', color: 'var(--color-text)'}}>Email Address</h4>
                     <a 
-                      href="mailto:kulswaminipratishthan@gmail.com" 
+                      href="mailto:kulswaminipratistanpune@gmail.com" 
                       style={{
                         color: '#007bff', 
                         textDecoration: 'none',
@@ -98,7 +98,7 @@ const Contact = () => {
                         e.target.style.color = '#007bff';
                       }}
                     >
-                      kulswaminipratishthan@gmail.com
+                      kulswaminipratistanpune@gmail.com
                     </a>
                   </div>
                 </div>
