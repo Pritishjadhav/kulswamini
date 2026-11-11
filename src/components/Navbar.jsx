@@ -48,7 +48,7 @@ const Navbar = () => {
     { name: 'Activities', path: '/activities' },
     { name: 'Team', path: '/team' },
     { name: 'Events', path: '/events' },
-    { name: 'Gondan Book', path: '/book' },
+    { name: 'Gondan Diwali Ank', path: '/book' },
     { name: 'Contact', path: '/contact' },
   ];
 

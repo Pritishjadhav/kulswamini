@@ -39,7 +39,7 @@ const Book = () => {
               LITERARY COLLECTION
             </div>
             
-            <h1 className="book-title-minimal">Gondan Book</h1>
+            <h1 className="book-title-minimal">Gondan Diwali Ank</h1>
             
             <p className="book-subtitle-minimal">
               A beautiful collection of literature celebrating our culture and community
@@ -55,7 +55,7 @@ const Book = () => {
             <div className="book-image-minimal">
               <img 
                 src="/events/home.jpeg" 
-                alt="Gondan Book Cover"
+                alt="Gondan Diwali Ank Cover"
                 className="book-cover-minimal"
               />
             </div>
@@ -109,7 +109,7 @@ const Book = () => {
             <div className="ceremony-image-wrapper">
               <img 
                 src="/events/gondan.jpeg" 
-                alt="Gondan Book Release Ceremony - Kulswamini Pratishthan" 
+                alt="Gondan Diwali Ank Release Ceremony - Kulswamini Pratishthan" 
                 className="ceremony-image"
               />
             </div>
