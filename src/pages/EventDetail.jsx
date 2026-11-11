@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Calendar, MapPin, Users, Clock, Heart, TreePine, BookOpen, Handshake, CheckCircle, Target, Award } from 'lucide-react';
+import { ArrowLeft, Calendar, MapPin, Users, Clock, Heart, TreePine, BookOpen, CheckCircle, Target, Award } from 'lucide-react';
 import './About.css';
 import './EventDetail.css';
 
@@ -8,60 +8,6 @@ const EventDetail = () => {
   const navigate = useNavigate();
 
   const events = [
-    {
-      id: 1,
-      title: "Mega Blood Donation Camp 2024",
-      date: "March 15, 2024",
-      location: "Katraj Community Center, Pune",
-      participants: "150+ Donors",
-      duration: "6 hours",
-      image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      icon: Heart,
-      description: "Our largest blood donation camp of 2024 was a tremendous success, collecting over 150 units of blood to support local hospitals and emergency services. This life-saving initiative brought together volunteers, medical professionals, and community members in a unified effort to address the critical blood shortage in Pune's healthcare system.",
-      highlights: [
-        "150+ voluntary blood donors participated from across Pune",
-        "Medical team from 3 major hospitals ensured safe procedures",
-        "Free comprehensive health checkups for all participants",
-        "Nutritious refreshments and appreciation certificates provided",
-        "Blood collection exceeded target by 25%",
-        "Emergency blood bank reserves replenished successfully"
-      ],
-      impact: "The collected blood helped save approximately 450 lives across Pune's hospitals. Emergency departments reported improved response capabilities, and several critical surgeries were successfully performed using the donated blood.",
-      organizer: "Kulswamini Pratishthan in partnership with Pune Blood Bank",
-      gallery: [
-        "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-      ],
-      conclusion: "This blood donation camp exemplified the power of community solidarity and demonstrated how collective action can create life-saving impact. The overwhelming response from donors and volunteers reinforced our commitment to organizing regular health-focused community initiatives."
-    },
-    {
-      id: 2,
-      title: "Community Unity Drive",
-      date: "February 20, 2024",
-      location: "Multiple locations across Pune",
-      participants: "500+ Volunteers",
-      duration: "Full day",
-      image: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      icon: Handshake,
-      description: "A comprehensive city-wide initiative bringing together volunteers from different communities to work on various social projects and strengthen community bonds. This groundbreaking event focused on breaking barriers and fostering unity among diverse groups across Pune.",
-      highlights: [
-        "500+ volunteers from diverse backgrounds and communities",
-        "10 different community development projects executed",
-        "Inter-community collaboration workshops conducted",
-        "Cultural exchange programs promoting understanding",
-        "Community leaders from 15 different areas participated",
-        "Sustainable partnerships formed for future initiatives"
-      ],
-      impact: "Strengthened relationships between different communities, completed multiple social welfare projects, and established a framework for ongoing inter-community collaboration. The initiative resulted in improved social cohesion and reduced community tensions.",
-      organizer: "Kulswamini Pratishthan with local community leaders",
-      gallery: [
-        "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-      ],
-      conclusion: "The Community Unity Drive successfully demonstrated that diversity is our strength. By bringing together people from different backgrounds, we created lasting bonds and established a model for inclusive community development that other cities can replicate."
-    },
     {
       id: 3,
       title: "Green Pune Initiative 2019-20",
@@ -200,7 +146,8 @@ const EventDetail = () => {
         "/events/warkari 2.jpeg",
         "/events/warkari 3.jpeg",
         "/events/warkari 4.jpeg",
-        "/events/warkari 5.mp4"
+        "/events/eventtt.jpeg",
+        "/events/videooooo.mp4"
       ],
       conclusion: "We are committed to providing free healthcare services, promoting health awareness, and supporting the well-being of Warkaris and the community through regular health check-up camps and social service activities."
     }

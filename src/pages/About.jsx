@@ -110,8 +110,8 @@ const About = () => {
     { 
       year: "2024", 
       title: "Major Milestone", 
-      description: "Completed 50+ blood donation camps and 10,000+ tree plantations. Recognized by Maharashtra Government for outstanding community service and environmental conservation efforts.",
-      achievements: ["50+ blood camps", "10,000+ trees planted", "Government recognition"]
+      description: "Completed 10+ medical camps, 500+ tree plantations, and provided Financial Aid to Needy People.",
+      achievements: ["10+ medical camps", "500+ trees planted", "Financial Aid to Needy People"]
     }
   ];
 
@@ -184,7 +184,7 @@ const About = () => {
             <div className="story-visual-enhanced">
               <div className="image-container-enhanced">
                 <img 
-                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="/events/about.jpeg" 
                   alt="Our volunteers in action" 
                   className="story-main-image-enhanced"
                 />
@@ -196,14 +196,14 @@ const About = () => {
                     <span className="stat-label-bubble">Years</span>
                   </div>
                   <div className="stat-bubble secondary">
-                    <span className="stat-number-bubble">30+</span>
+                    <span className="stat-number-bubble">60+</span>
                     <span className="stat-label-bubble">Volunteers</span>
                   </div>
                 </div>
                 
                 <div className="volunteer-badge">
                   <Users className="volunteer-icon" />
-                  <span>Trusted by 30+ Volunteers</span>
+                  <span>Trusted by 60+ Volunteers</span>
                 </div>
               </div>
             </div>

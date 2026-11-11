@@ -163,7 +163,7 @@
 }
 
 .btn-read-minimal, .btn-download-minimal {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
@@ -175,6 +175,7 @@
   font-size: 1rem;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .btn-read-minimal::before,
@@ -222,6 +223,275 @@
   box-shadow: 0 12px 35px rgba(255, 153, 51, 0.3);
 }
 
+/* Book Ceremony / Launch Section */
+.book-ceremony-section {
+  padding: 0 0 5rem 0;
+  background: white;
+  position: relative;
+}
+
+.book-ceremony-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  padding: 2.5rem;
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.ceremony-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ceremony-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  background: rgba(255, 153, 51, 0.12);
+  color: #ea580c;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.ceremony-header h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--color-text, #1e293b);
+  margin-bottom: 0.75rem;
+}
+
+.ceremony-header p {
+  color: var(--color-text-light, #64748b);
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.ceremony-image-wrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  border: 4px solid white;
+}
+
+.ceremony-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.ceremony-image-wrapper:hover .ceremony-image {
+  transform: scale(1.015);
+}
+
+/* Year Selection Modal for Read Online / Download */
+.book-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1.5rem;
+  animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.book-modal-card {
+  background: white;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 520px;
+  padding: 2rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.book-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.book-modal-badge {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  background: rgba(255, 153, 51, 0.12);
+  color: #ea580c;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  margin-bottom: 0.5rem;
+}
+
+.book-modal-title-group h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.35rem;
+}
+
+.book-modal-title-group p {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.book-modal-close-btn {
+  background: #f1f5f9;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.book-modal-close-btn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.book-modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.book-modal-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.25s ease;
+}
+
+.book-modal-row:hover {
+  background: #fff7ed;
+  border-color: #fdba74;
+  transform: translateX(4px);
+}
+
+.book-modal-item-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.book-modal-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f97316;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #fed7aa;
+  flex-shrink: 0;
+}
+
+.book-modal-item-year {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.2rem 0;
+}
+
+.book-modal-item-desc {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.modal-btn-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.modal-btn-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(234, 88, 12, 0.45);
+}
+
+.modal-btn-action.download {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+}
+
+.modal-btn-action.download:hover {
+  box-shadow: 0 6px 18px rgba(5, 150, 105, 0.45);
+}
+
+.modal-badge-coming-soon {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #94a3b8;
+  background: #f1f5f9;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .book-title-minimal {
@@ -241,8 +511,40 @@
   .book-section-minimal {
     padding: 2rem 0;
   }
+
+  .book-ceremony-section {
+    padding: 0 0 3rem 0;
+  }
+
+  .book-ceremony-card {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .ceremony-header h2 {
+    font-size: 1.5rem;
+  }
   
   .book-buttons-minimal {
     justify-content: center;
+  }
+
+  .book-modal-card {
+    padding: 1.5rem;
+  }
+
+  .book-modal-row {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .book-modal-item-left {
+    flex-direction: column;
+  }
+
+  .modal-btn-action {
+    justify-content: center;
+    width: 100%;
   }
 }

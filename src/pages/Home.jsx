@@ -36,7 +36,7 @@ const Home = () => {
     { number: "2", label: "Blood Drives", icon: Heart },
     { number: "500+", label: "Trees Planted", icon: TreePine },
     { number: "1", label: "Lectures", icon: BookOpen },
-    { number: "30+", label: "Volunteers", icon: Users }
+    { number: "60+", label: "Volunteers", icon: Users }
   ];
 
   const features = [
@@ -100,7 +100,7 @@ const Home = () => {
             
             <div className="hero-stats-mini">
               <div className="stat-mini">
-                <span className="stat-num">30+</span>
+                <span className="stat-num">60+</span>
                 <span className="stat-text">Volunteers</span>
               </div>
               <div className="stat-divider"></div>
@@ -119,8 +119,8 @@ const Home = () => {
           <div className="hero-visual-clean">
             <div className="visual-image-wrapper">
               <img 
-                src="/hero-image.png" 
-                alt="Volunteers helping" 
+                src="/events/home.jpeg" 
+                alt="Gondan Diwali Special Edition - Kulswamini Pratishthan" 
                 className="hero-main-image"
               />
               <div className="image-overlay-gradient"></div>
@@ -138,9 +138,12 @@ const Home = () => {
                     <Calendar size={24} className="card-icon" />
                  </div>
                  <div className="card-info">
-                   <h3>Exciting Updates Coming Soon!</h3>
+                   <h3>Children's Science Exhibition</h3>
                    <div className="card-meta">
-                     <span>Stay tuned for our upcoming events and initiatives</span>
+                     <span>
+                       <MapPin size={16} style={{ flexShrink: 0, marginTop: '2px', color: '#ef4444' }} />
+                       ZP Primary School, near Pabal, Tal-Shirur, Dist-Pune 412403
+                     </span>
                    </div>
                  </div>
               </div>

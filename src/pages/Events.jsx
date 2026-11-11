@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { Calendar, Users, Heart, TreePine, BookOpen, Handshake, ArrowRight } from 'lucide-react';
+import { Calendar, Users, Heart, TreePine, BookOpen, ArrowRight } from 'lucide-react';
 import './About.css'; // Reusing page-header classes
 import './Events.css'; // Event-specific styles
 
@@ -28,38 +28,6 @@ const Events = () => {
       date: "Yearly",
       participants: "500+ Warkaris",
       image: "/events/warkari 1.jpeg",
-      icon: Heart
-    },
-    {
-      id: 1,
-      title: "Mega Blood Donation Camp 2024",
-      date: "March 15, 2024",
-      participants: "150+ Donors",
-      image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      icon: Heart
-    },
-    {
-      id: 2,
-      title: "Community Unity Drive",
-      date: "February 20, 2024",
-      participants: "500+ Volunteers",
-      image: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      icon: Handshake
-    },
-    {
-      id: 5,
-      title: "Skill Development Workshop",
-      date: "November 18, 2023",
-      participants: "80+ Participants",
-      image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      icon: Users
-    },
-    {
-      id: 6,
-      title: "Children's Joy Festival",
-      date: "October 14, 2023",
-      participants: "120+ Children",
-      image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       icon: Heart
     }
   ];

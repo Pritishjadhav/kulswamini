@@ -125,7 +125,8 @@ const ActivityDetail = () => {
       locations: "Ralegan Siddhi Tal-Parner, Dist-Ahillya Nagar, Maharashtra 414302 & ZP School Wablewadi Tal-Shirur, Dist-Pune",
       gallery: [
         "/events/ainna hazare 1.jpeg",
-        "/events/ainna hazae 2.jpeg"
+        "/events/ainna hazae 2.jpeg",
+        "/events/aadachiwadi.jpeg"
       ],
       results: [
         "Gained knowledge about social work and rural development",
