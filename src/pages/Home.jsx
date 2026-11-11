@@ -33,7 +33,7 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: "5", label: "Health Camps", icon: Heart },
+    { number: "10+", label: "Health Camps", icon: Heart },
     { number: "500+", label: "Trees Planted", icon: TreePine },
     { number: "1", label: "Lectures", icon: BookOpen },
     { number: "60+", label: "Volunteers", icon: Users }
@@ -110,7 +110,7 @@ const Home = () => {
               </div>
               <div className="stat-divider"></div>
               <div className="stat-mini">
-                <span className="stat-num">5</span>
+                <span className="stat-num">10+</span>
                 <span className="stat-text">Health Camps</span>
               </div>
             </div>
